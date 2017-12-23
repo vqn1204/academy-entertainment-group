@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Homepage from '@/components/Homepage'
-import Navbar from '@/components/Navbar'
 import BootstrapVue from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -14,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Navbar',
-      component: Navbar
+      name: 'Homepage',
+      component: Homepage
     }
   ]
 })
