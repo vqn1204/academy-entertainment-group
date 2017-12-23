@@ -5,9 +5,15 @@
         <b-navbar-brand href="#">Academy Entertainment Group</b-navbar-brand>
       
         <b-navbar-nav>
-          <b-nav-item>About</b-nav-item>
-          <b-nav-item>Members</b-nav-item>
-          <b-nav-item>Youtube</b-nav-item>
+          <b-nav-item>
+            <a href="#" v-scroll-to="'#about'">About</a>
+          </b-nav-item>
+          <b-nav-item>
+             <a href="#" v-scroll-to="'#members'">Members</a>
+          </b-nav-item>
+          <b-nav-item>
+            <a href="#" v-scroll-to="'#youtube'">YouTube</a>
+          </b-nav-item>
         </b-navbar-nav>
       </b-navbar>
     </div>
@@ -42,9 +48,14 @@ export default {
 
 .navbar-brand {
   margin-left: 1em;
+  font-weight: bold;
 }
 
 .bg-dark {
   background-color: black !important;
+}
+
+a:hover {
+  text-decoration: none;
 }
 </style>
